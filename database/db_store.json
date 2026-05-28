@@ -1,0 +1,436 @@
+{
+  "departments": [
+    {
+      "id": 1,
+      "name": "Engineering & Tech",
+      "code": "ENG",
+      "manager_id": 2,
+      "budget": 1200000
+    },
+    {
+      "id": 2,
+      "name": "Human Resources",
+      "code": "HR",
+      "manager_id": 1,
+      "budget": 350000
+    },
+    {
+      "id": 3,
+      "name": "Sales & Marketing",
+      "code": "MKT",
+      "manager_id": 4,
+      "budget": 500000
+    },
+    {
+      "id": 4,
+      "name": "Finance & Payroll",
+      "code": "FIN",
+      "manager_id": 5,
+      "budget": 400000
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "employee_id": "EMP-2026-001",
+      "first_name": "Sarah",
+      "last_name": "Jenkins",
+      "email": "sarah.j@enterprise.com",
+      "phone": "+1 (555) 0192",
+      "hire_date": "2024-03-15",
+      "job_title": "HR Executive Director",
+      "department_id": 2,
+      "salary": 9500,
+      "status": "Active",
+      "performance_score": "Excellent"
+    },
+    {
+      "id": 2,
+      "employee_id": "EMP-2026-002",
+      "first_name": "David",
+      "last_name": "Chen",
+      "email": "david.c@enterprise.com",
+      "phone": "+1 (555) 0244",
+      "hire_date": "2024-06-01",
+      "job_title": "Lead Cloud Infrastructure Architect",
+      "department_id": 1,
+      "salary": 145000,
+      "status": "Active",
+      "performance_score": "Excellent"
+    },
+    {
+      "id": 3,
+      "employee_id": "EMP-2026-003",
+      "first_name": "Elena",
+      "last_name": "Rostova",
+      "email": "elena.r@enterprise.com",
+      "phone": "+1 (555) 0388",
+      "hire_date": "2025-01-10",
+      "job_title": "Senior Software Engineer",
+      "department_id": 1,
+      "salary": 115000,
+      "status": "Active",
+      "performance_score": "Good"
+    },
+    {
+      "id": 4,
+      "employee_id": "EMP-2026-004",
+      "first_name": "Marcus",
+      "last_name": "Aurelius",
+      "email": "marcus.a@enterprise.com",
+      "phone": "+1 (555) 0412",
+      "hire_date": "2025-08-20",
+      "job_title": "Marketing Lead",
+      "department_id": 3,
+      "salary": 85000,
+      "status": "Active",
+      "performance_score": "Good"
+    },
+    {
+      "id": 5,
+      "employee_id": "EMP-2026-005",
+      "first_name": "Jane",
+      "last_name": "Doe",
+      "email": "jane.doe@enterprise.com",
+      "phone": "+1 (555) 0513",
+      "hire_date": "2025-11-25",
+      "job_title": "Compensation & Payroll Analyst",
+      "department_id": 4,
+      "salary": 78000,
+      "status": "Active",
+      "performance_score": "Good"
+    },
+    {
+      "id": 6,
+      "employee_id": "EMP-2026-006",
+      "first_name": "Robert",
+      "last_name": "Miller",
+      "email": "robert.m@enterprise.com",
+      "phone": "+1 (555) 0691",
+      "hire_date": "2026-02-01",
+      "job_title": "Junior Developer",
+      "department_id": 1,
+      "salary": 65000,
+      "status": "On Leave",
+      "performance_score": "Average"
+    },
+    {
+      "id": 7,
+      "employee_id": "EMP-2026-007",
+      "first_name": "Yathin",
+      "last_name": "shetty",
+      "email": "yathinshetty749@gmail.com",
+      "phone": "+916364532816",
+      "hire_date": "2026-05-28",
+      "job_title": "ceo",
+      "department_id": 1,
+      "salary": 9500000,
+      "status": "Active",
+      "performance_score": "Good",
+      "gender": "Male",
+      "address": "#4, MK enclave, makali dasanpura, hobli",
+      "emergency_contact": "6364532816",
+      "avatar_url": null
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "yathin",
+      "email": "yathin@enterprise.com",
+      "password_hash": "$2b$10$yCDDhNYcKFUQs9unEvD58eZedPwTY.mcE2x5Yy4i3O.Gc7mIQR3Ge",
+      "role": "Admin",
+      "employee_id": null
+    },
+    {
+      "id": 2,
+      "username": "sarah_hr",
+      "email": "sarah.j@enterprise.com",
+      "password_hash": "$2b$10$yCDDhNYcKFUQs9unEvD58eZedPwTY.mcE2x5Yy4i3O.Gc7mIQR3Ge",
+      "role": "HR Manager",
+      "employee_id": 1
+    },
+    {
+      "id": 3,
+      "username": "david_tech",
+      "email": "david.c@enterprise.com",
+      "password_hash": "$2b$10$yCDDhNYcKFUQs9unEvD58eZedPwTY.mcE2x5Yy4i3O.Gc7mIQR3Ge",
+      "role": "Employee",
+      "employee_id": 2
+    },
+    {
+      "id": 4,
+      "username": "elena_eng",
+      "email": "elena.r@enterprise.com",
+      "password_hash": "$2b$10$yCDDhNYcKFUQs9unEvD58eZedPwTY.mcE2x5Yy4i3O.Gc7mIQR3Ge",
+      "role": "Employee",
+      "employee_id": 3
+    }
+  ],
+  "leave_requests": [
+    {
+      "id": 1,
+      "employee_id": 6,
+      "leave_type": "Sick",
+      "start_date": "2026-05-20",
+      "end_date": "2026-05-22",
+      "reason": "Medical dental procedure recovery",
+      "status": "Approved",
+      "approved_by": 1,
+      "created_at": "2026-05-20T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "employee_id": 3,
+      "leave_type": "Annual",
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-17",
+      "reason": "Summer family vacation trip",
+      "status": "Pending",
+      "approved_by": null,
+      "created_at": "2026-05-25T11:30:00Z"
+    },
+    {
+      "id": 3,
+      "employee_id": 4,
+      "leave_type": "Unpaid",
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-05",
+      "reason": "Personal housing relocation planning",
+      "status": "Pending",
+      "approved_by": null,
+      "created_at": "2026-05-27T16:00:00Z"
+    }
+  ],
+  "payroll": [
+    {
+      "id": 1,
+      "employee_id": 1,
+      "month": "2026-05",
+      "basic_salary": 7916.67,
+      "bonuses": 500,
+      "deductions": 200,
+      "net_salary": 8216.67,
+      "payment_status": "Paid",
+      "payment_date": "2026-05-25"
+    },
+    {
+      "id": 2,
+      "employee_id": 2,
+      "month": "2026-05",
+      "basic_salary": 12083.33,
+      "bonuses": 1500,
+      "deductions": 500,
+      "net_salary": 13083.33,
+      "payment_status": "Paid",
+      "payment_date": "2026-05-25"
+    },
+    {
+      "id": 3,
+      "employee_id": 3,
+      "month": "2026-05",
+      "basic_salary": 9583.33,
+      "bonuses": 0,
+      "deductions": 300,
+      "net_salary": 9283.33,
+      "payment_status": "Paid",
+      "payment_date": "2026-05-25"
+    },
+    {
+      "id": 4,
+      "employee_id": 4,
+      "month": "2026-05",
+      "basic_salary": 7083.33,
+      "bonuses": 200,
+      "deductions": 150,
+      "net_salary": 7133.33,
+      "payment_status": "Paid",
+      "payment_date": "2026-05-28"
+    },
+    {
+      "id": 5,
+      "employee_id": 5,
+      "month": "2026-05",
+      "basic_salary": 6500,
+      "bonuses": 0,
+      "deductions": 100,
+      "net_salary": 6400,
+      "payment_status": "Pending",
+      "payment_date": null
+    },
+    {
+      "id": 6,
+      "employee_id": 6,
+      "month": "2026-05",
+      "basic_salary": 5416.67,
+      "bonuses": 0,
+      "deductions": 100,
+      "net_salary": 5316.67,
+      "payment_status": "Pending"
+    },
+    {
+      "id": 7,
+      "employee_id": 7,
+      "month": "2026-05",
+      "basic_salary": 791666.67,
+      "bonuses": 200,
+      "deductions": 0,
+      "net_salary": 791866.67,
+      "payment_status": "Pending"
+    }
+  ],
+  "attendance": [
+    {
+      "id": 1,
+      "employee_id": 1,
+      "date": "2026-05-28",
+      "clock_in": "08:52:10",
+      "clock_out": null,
+      "status": "Present",
+      "notes": "On premises in Building A"
+    },
+    {
+      "id": 2,
+      "employee_id": 2,
+      "date": "2026-05-28",
+      "clock_in": "08:45:00",
+      "clock_out": null,
+      "status": "Present",
+      "notes": "Remote server status validation"
+    },
+    {
+      "id": 3,
+      "employee_id": 3,
+      "date": "2026-05-28",
+      "clock_in": "09:12:30",
+      "clock_out": null,
+      "status": "Late",
+      "notes": "Heavy traffic commute delay"
+    },
+    {
+      "id": 4,
+      "employee_id": 4,
+      "date": "2026-05-28",
+      "clock_in": "08:55:00",
+      "clock_out": null,
+      "status": "Present",
+      "notes": "On premises"
+    },
+    {
+      "id": 5,
+      "employee_id": 5,
+      "date": "2026-05-28",
+      "clock_in": "09:00:00",
+      "clock_out": null,
+      "status": "Present",
+      "notes": "On premises"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Migrate Core Database to Cloud Server",
+      "description": "Provision Multi-AZ Cloud database node, map replication topologies, export schemas and migrate user storage files security validation.",
+      "status": "In Progress",
+      "priority": "Critical",
+      "due_date": "2026-06-15",
+      "created_by": 2,
+      "created_at": "2026-05-28T09:12:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Perform Mid-Year Performance Assessments",
+      "description": "Setup performance review benchmarks, request employee self-appraisals, and finalize scoring matrices within HR parameters.",
+      "status": "Todo",
+      "priority": "High",
+      "due_date": "2026-07-01",
+      "created_by": 1,
+      "created_at": "2026-05-28T09:15:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Audit Corporate Security Protocols",
+      "description": "Perform threat intelligence audits across local firewall servers and restrict external endpoint accesses to secure tunnels.",
+      "status": "Completed",
+      "priority": "Medium",
+      "due_date": "2026-05-20",
+      "created_by": 2,
+      "created_at": "2026-05-18T10:00:00Z"
+    }
+  ],
+  "task_assignments": [
+    {
+      "task_id": 1,
+      "employee_id": 2
+    },
+    {
+      "task_id": 1,
+      "employee_id": 3
+    },
+    {
+      "task_id": 2,
+      "employee_id": 1
+    },
+    {
+      "task_id": 2,
+      "employee_id": 5
+    },
+    {
+      "task_id": 3,
+      "employee_id": 2
+    }
+  ],
+  "performance_reviews": [
+    {
+      "id": 1,
+      "employee_id": 3,
+      "reviewer_id": 2,
+      "review_period": "Annual 2025",
+      "kpi_score": 4.5,
+      "goals_met": 1,
+      "feedback": "Elena continues to exceed architectural standards in platform performance optimization. Exceptional delivery on core services rewriting.",
+      "review_date": "2025-12-15",
+      "created_at": "2025-12-15T15:00:00Z"
+    },
+    {
+      "id": 2,
+      "employee_id": 6,
+      "reviewer_id": 2,
+      "review_period": "Q1 2026",
+      "kpi_score": 3.2,
+      "goals_met": 0,
+      "feedback": "Robert shows enthusiastic learning growth but needs stricter emphasis on test coverage benchmarks and clean code conventions.",
+      "review_date": "2026-04-05",
+      "created_at": "2026-04-05T10:30:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "title": "New Leave Application Received",
+      "message": "Elena Rostova has filed a new Annual Leave application from 2026-06-10 to 2026-06-17. Please inspect and process.",
+      "type": "Action",
+      "is_read": 0,
+      "created_at": "2026-05-28T09:10:00Z"
+    },
+    {
+      "id": 2,
+      "user_id": 3,
+      "title": "Critical Task Priority Assignment",
+      "message": "You have been assigned to: Migration of Core Database. Due date initialized as June 15, 2026.",
+      "type": "Task",
+      "is_read": 0,
+      "created_at": "2026-05-28T09:11:00Z"
+    },
+    {
+      "id": 3,
+      "user_id": 4,
+      "title": "Payroll Remittance Audited",
+      "message": "Your payroll slip for MAY 2026 has been successfully generated and finalized for bank transaction.",
+      "type": "Payroll",
+      "is_read": 1,
+      "created_at": "2026-05-28T09:12:00Z"
+    }
+  ]
+}

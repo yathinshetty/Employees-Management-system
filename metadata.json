@@ -1,0 +1,6 @@
+{
+  "name": "Employee Management System",
+  "description": "An enterprise-level Employee Management System featuring modern HR analytics, employee directories, payroll, leave management, and high-performance secure dashboards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
